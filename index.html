@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <div class="container glass-effect">
+        <div class="header">
+            <i class="fas fa-brain icon-3d"></i>
+            <h1>Recovery Journey</h1>
+            <p id="startDate" class="start-date">Not started yet</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="stats-container">
+                <div class="stat-card glass-effect">
+                    <div class="stat-content">
+                        <h2>Days Clean</h2>
+                        <p id="dayCount" class="counter">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="motivation-card glass-effect">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <div id="motivationText" class="motivation-text">
+                    Your journey begins here...
+                </div>
+                <i class="fas fa-quote-right quote-icon"></i>
+            </div>
+
+            <button id="countButton" class="pulse-button">
+                <span class="button-content">
+                    <i class="fas fa-plus"></i>
+                    Count New Day
+                </span>
+            </button>
+
+            <div class="milestones">
+                <div class="milestone glass-effect" data-days="1">
+                    <i class="fas fa-star"></i>
+                    <span>1D</span>
+                </div>
+                <div class="milestone glass-effect" data-days="7">
+                    <i class="fas fa-medal"></i>
+                    <span>7D</span>
+                </div>
+                <div class="milestone glass-effect" data-days="30">
+                    <i class="fas fa-trophy"></i>
+                    <span>30D</span>
+                </div>
+                <div class="milestone glass-effect" data-days="90">
+                    <i class="fas fa-crown"></i>
+                    <span>90D</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
